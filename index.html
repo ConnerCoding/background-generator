@@ -5,53 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel='stylesheet' href="styles/style.css">
-	<style>
-		h1 {
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 3rem;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		letter-spacing: .5em;
-		color: rgba(0, 0, 0, 0.6);
-		}
-
-		h2 {
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 1.5rem;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		letter-spacing: 3px;
-		color: rgba(0, 0, 0, 0.6);
-
-		}
-
-		.color {
-		text-align: center;
-		}
-
-		.cssInfo {
-		text-align: center;
-		color: rgba(0, 0, 0, 0.6);
-		letter-spacing: 0.01em;
-		}
-	</style>
-	<script src="scripts/main.js" defer>
-		var color1 = document.querySelector('.color1');
-		var color2 = document.querySelector('.color2');
-		var body = document.querySelector('body');
-		var cssInfo = document.querySelector('.cssInfo');
-
-		changeBG();
-
-		color1.addEventListener('input', changeBG);
-
-		color2.addEventListener('input', changeBG);
-
-		function changeBG() {
-			body.style.background = 'linear-gradient(to right, ' + color1.value + ', ' + color2.value + ')';
-			cssInfo.textContent = body.style.background;
-		}
-	</script>
+	<script src="scripts/main.js" defer></script>
 </head>
 <body>
 	<h1>Background Generator</h1>
